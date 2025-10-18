@@ -1,0 +1,10 @@
+{
+  "runtime": "python3.11",
+  "handler": "index.handler",
+  "memorySize": 256,
+  "timeout": 30,
+  "environmentVariables": {
+    "CUSTOM_VAR": "custom_value",
+    "LOG_LEVEL": "INFO"
+  }
+}

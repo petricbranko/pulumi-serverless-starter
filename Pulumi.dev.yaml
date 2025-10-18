@@ -1,0 +1,40 @@
+config:
+  # AWS Configuration
+  aws:region: us-east-1
+
+  # Project Configuration
+  serverless-starter:projectName: my-serverless-app
+
+  # DynamoDB Configuration (Optional - set enableDynamoDB to false to disable)
+  serverless-starter:enableDynamoDB: true
+  serverless-starter:dynamodbTableName: app-table
+  serverless-starter:dynamodbHashKey: id
+  serverless-starter:dynamodbBillingMode: PAY_PER_REQUEST
+  serverless-starter:dynamodbEnablePITR: true
+  serverless-starter:dynamodbEnableEncryption: true
+
+  # Lambda Configuration (Auto-Discovery)
+  serverless-starter:lambdaAutoDiscover: true
+  serverless-starter:lambdaFunctionsDirectory: ./lambda_functions
+  serverless-starter:lambdaDefaultRuntime: python3.11
+  serverless-starter:lambdaDefaultHandler: index.handler
+  serverless-starter:lambdaDefaultMemorySize: 256
+  serverless-starter:lambdaDefaultTimeout: 30
+
+  # API Gateway Configuration
+  serverless-starter:apiGatewayDefaultName: serverless-api
+
+  # API Gateway Mappings (Optional)
+  # Map specific Lambda functions to different API Gateways
+  # Format: "api-name:function1,function2;another-api:function3"
+  # Leave empty to deploy all functions to one default API Gateway
+  serverless-starter:apiGatewayMappings: ""
+
+  # Example mappings (uncomment to use):
+  # serverless-starter:apiGatewayMappings: "app1-api:hello,world;app2-api:user"
+
+  # Custom Domain Configuration (Optional)
+  serverless-starter:enableCustomDomain: false
+  # Uncomment and configure these if enableCustomDomain is true:
+  # serverless-starter:domainName: example.com
+  # serverless-starter:subdomain: api
