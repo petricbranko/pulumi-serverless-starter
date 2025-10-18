@@ -2,6 +2,8 @@
 
 A production-ready serverless starter template using Pulumi and AWS. Deploys Lambda functions, DynamoDB tables, and API Gateway with optional custom domain support.
 
+> **📖 Want to learn more?** Read the full story behind this project: [Building a Modular Pulumi Serverless Starter](https://brankopetric.com/blog/pulumi-serverless-starter/)
+
 ## Features
 
 - **Auto-Discovery**: Automatically discovers and deploys all Lambda functions from the `lambda_functions` directory
